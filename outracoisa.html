@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+
+<html ng-app="KEYS">
+	<head>
+	
+	
+		<title> PFV ANGULA MATERIAL NUNCA TE PEDI NADA </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        
+        <!-- Scripts -->
+		
+		<!-- Materialize -->
+	<!-- Compiled and minified CSS  -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0"></script>
+	
+       
+        
+        <!-- Angular -->
+            <script src="js/lib/angular.min.js"></script>
+    <script src="js/lib/angular-route.min.js"></script>
+    <script src="js/lib/angular-ui-router.min.js"></script>
+    <script src="js/lib/angular-sanitize.min.js"></script>
+    <script src="js/lib/angular-animate.min.js"></script>
+    <script src="js/lib/angular-aria.min.js"></script>
+
+        <!-- JQuery -->
+        <script src="js/lib/jquery.min.js"></script>
+
+        
+        <!-- App -->
+    <script src="js/app.js"></script>
+    <script src="js/router/router.js"></script>
+    <script src="js/router/state.js"></script>
+        
+        <!-- Controller -->
+        <script src="js/controller/KEYSController.js"></script>
+
+        <!-- Service -->
+        <script src="js/service/KEYSService.js"></script>
+		
+		<!-- inicializações -->
+		 $(document).ready(function(){
+			$('.collapsible').collapsible();
+		 });
+        
+	
+	</head>
+	<body ng-controller="KEYSController">
+
+		<!-- Page Wrapper -->
+        <div id="page-wrapper">
+
+            <!-- Header -->
+            <header id="header">
+                <h1><a href="index.html">KEYS</a></h1>
+				<nav>
+				    <a href="#menu">Menu</a>
+				</nav>
+            </header>
+
+            <!-- Menu -->
+            <nav id="menu">
+                <div class="inner">
+                    <h2>Menu</h2>
+                    <ul class="links">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="detalhes.html">Detalhes</a></li>
+						<!--	<li><a href="#">Login</a></li> -->
+                        <li><a href="#">Cadastrar</a></li>
+                    </ul>
+                    <a href="#" class="fechar">Fechar</a>
+                </div>
+            </nav>
+            
+            <!-- Wrapper -->
+            <section id="wrapper">
+                <header>
+                    <div class="inner">
+                        <h2>SALAS</h2>
+                        <p>Visualize a salas e os horarios.</p>
+                    </div>
+                </header>
+            </section>               
+                
+           
+                        
+                   <ul class="collapsible" data-collapsible="expansable">
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">add</i>Disciplina 1</div>
+                            <div class="collapsible-body">
+                                <span>
+                                    <ul class="collapsible" data-collapsible="expansable">
+                                        <li>
+                                            <div class="collapsible-header"><i class="material-icons">add</i>Assunto 1</div>
+                                            <div class="collapsible-body"><span>Questão 1: Lorem ipsum dolor sit amet.</span></div>
+                                        </li>
+                                        <li>
+                                            <div class="collapsible-header"><i class="material-icons">add</i>Assunto 2</div>
+                                            <div class="collapsible-body"><span>Questão 2: Lorem ipsum dolor sit amet.</span></div>
+                                         </li>
+                                         <li>
+                                              <div class="collapsible-header"><i class="material-icons">add</i>Assunto 3</div>
+                                              <div class="collapsible-body"><span>Questão 3:Lorem ipsum dolor sit amet.</span></div>
+                                          </li>
+                                    </ul>
+                                </span>
+                            </div>
+                        </li>
+                    
+            <!-- Footer -->
+                <section id="footer">
+                    <div class="inner">
+                        <ul class="copyright">
+                            <li>&copy; RYM Inc.</li>
+				        </ul>
+				    </div>
+				</section>
+            
+        </div>
+	</body>
+</html>

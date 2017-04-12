@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+
+<html ng-app="KEYS">
+	<head>
+		<title> ADM </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        
+        <!-- Scripts -->
+       <script src="js/lib/angular.min.js"></script>
+    <script src="js/lib/angular-route.min.js"></script>
+    <script src="js/lib/angular-ui-router.min.js"></script>
+    <script src="js/lib/angular-sanitize.min.js"></script>
+    <script src="js/lib/angular-animate.min.js"></script>
+    <script src="js/lib/angular-aria.min.js"></script>  
+	 
+	 <!-- Angular Material -->
+       
+        
+        <!-- Angular -->
+        <script src="js/lib/angular.min.js"></script>
+        <script src="js/lib/angular-route.min.js"></script>
+        <script src="js/lib/angular-sanitize.min.js"></script>    
+	
+      	
+        
+        <!-- JQuery -->
+        <script src="js/lib/jquery.min.js"></script>
+
+        <!-- App -->
+        <script src="js/app.js"></script>
+        <script src="js/router/router.js"></script>
+        
+        <!-- Controller -->
+        <script src="js/controller/KEYSController.js"></script>
+
+        <!-- Service -->
+        <script src="js/service/KEYSService.js"></script>
+	</head>
+	<body ng-controller="KEYSController">
+
+		<!-- Page Wrapper -->
+        <div id="page-wrapper">
+
+            <!-- Header -->
+            <header id="header">
+                <h1><a href="index.html">KEYS</a></h1>
+				<nav>
+				    <a href="#menu">Menu</a>
+				</nav>
+            </header>
+
+            <!-- Menu --> <nav id="menu">
+                <div class="inner">
+                    <h2>Menu</h2>
+                    <ul class="links">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="detalhes.html">Detalhes</a></li>
+				        <!--	<li><a href="#">Login</a></li> -->
+                    	<li><a href="adm.html">Entrar como administrador</a></li>
+						<li><a href="adm.html">Chaves</a></li>
+                    </ul>
+                    <a href="#" class="close">Fechar</a>
+                </div>
+            </nav>
+            
+            
+            <!-- Wrapper -->  
+			<section id="wrapper">
+                <header>
+                    <div class="inner">
+                        <h2>Salas e Reservas</h2>
+                        <p>A visualização das salas e de seus responsaveis.</p>
+                    </div>
+                </header>
+            </section>               
+                
+            <section>
+                <form method="post" action="index.html#!/detalhes" name="formz">
+                    <div class="row uniform">
+                        <div class="6u 12u$(xsmall)">
+                            <label for="demo-name">Nome</label>
+                            <input type="text" ng-model="adm.name" name="demo-name" id="demo-name"/>
+                           
+                            
+                        </div>
+                        <div class="6u$ 12u$(xsmall)">
+                            <label for="demo-password">Senha</label>
+                            <input type="password" ng-model="adm.password" name="demo-password" id="demo-password"/>
+                           
+                        </div>
+                        
+                        
+                        <div class="12u$">
+                            <ul class="actions">
+                                
+                                <li><input type="submit" value="Login" ng-click="validar()" class="special" /></li>
+                                <li><input type="reset" value="Limpar" /></li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+            </section>
+		
+            <!-- Footer -->
+                <section id="footer">
+                    <div class="inner">
+                        <ul class="copyright">
+                            <li>&copy; RYM Inc.</li>
+				        </ul>
+				    </div>
+				</section>
+            
+        </div>
+	</body>
+</html>
+          
