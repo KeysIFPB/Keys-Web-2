@@ -17,10 +17,14 @@ KeysAppModulo.factory("KeysService", function($http) {
     var _listarReserva = function() {
         return $http.get(urlBase + "/reserva/listar/")
     };
+    var _loginAdm = function() {
+        return $http.get(urlBase + "/adm/login/")
+    };
 
     return {
-        listarAlunos: _listarAlunos,
-        cadastrarAluno: _cadastrarAluno,
-        consultarAlunoByNome: _consultarAlunoByNome
+        listarChave: _listarChave,
+        cadastrarChave: _cadastrarChave,
+        listaeReserva: _listarReserva,
+        loginAdm: _loginAdm
     };
 });
