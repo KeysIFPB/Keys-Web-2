@@ -1,0 +1,46 @@
+<div class="container" ng-controller="KeysController">
+
+    <div class="row">
+        <div class="page-header">
+            <h1>Listar Reservas</h1>
+        </div>
+    </div>
+</br>
+
+</br>
+    <div class="row">
+
+        <!-- Listar todos os alunos, não pesquisa pelo nome -->
+       
+
+    </div>
+</br>
+    <!-- Exibir lista de Alunos -->
+    <div class="row">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Data</th>
+                    <th>Sala Reservada</th>
+                    <th>Responsavel</th>
+                    <th>Retirada</th>
+                    <th>Devolução</th>
+                    
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="reserva in reservas">
+                    <td>{{ reservas.id }}</td>
+                    <td>{{ reservas.d }}</td>
+                    <td>{{ reservas.chave }}</td>
+                    <td>{{ reservas.usuario }}</td>
+                    <td>{{ reservas.horaRetirada }}</td>
+                    <td>{{ reservas.horaDevolucao }}</td>
+                </tr>
+            </tbody> 
+        </table>
+    </div>
+
+</div>

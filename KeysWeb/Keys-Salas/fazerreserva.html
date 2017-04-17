@@ -1,0 +1,46 @@
+<div class="container" ng-controller="KeysController">
+
+    <div layout="column" layout-align="start stretch">
+        <div class="page-header">
+            <h1>Reservar</h1>
+        </div>
+
+        <form>
+            <!-- Nome -->
+            </br>
+            <div>
+                
+                
+                <label for="nome"> Sala: </label>
+                <input name="nome" type="text" ng-model="Chave.sala" placeholder="Nome" required> &emsp;&emsp;&emsp; 
+                <label for="responsavel"> responsavel: </label>
+                <input name="nome" type="text" ng-model="Chave.sala" placeholder="responsavel" required> &emsp;&emsp;&emsp; 
+                  <label for="data"> Data da Reserva: </label>
+                 <input type="date" name="datareserva">&emsp;&emsp;&emsp;
+                <label for="hr"> Hora de Retirada: 
+                <input type="time" name="time" placeholder="hrs:mins" pattern="^([0-1]?[0-9]|2[0-4]):([0-5][0-9])(:[0-5][0-9])?$" class="inputs time" required>&emsp;&emsp;&emsp;
+                    <label for="hr"> Hora de Devolução: 
+                <input type="time" name="time" placeholder="hrs:mins" pattern="^([0-1]?[0-9]|2[0-4]):([0-5][0-9])(:[0-5][0-9])?$" class="inputs time" required>&emsp;&emsp;&emsp;
+            <!-- Escola 
+                <label for="matricula"> Matrícula: </label>
+                <input name="matricula" type="text" ng-model="aluno.matricula" ng-keyup="addCampo()" placeholder="Matrícula" required> 
+            </div>
+
+            <!-- Escola -->
+            
+                
+                <!-- O ng-model representa o valor que será enviado ao controller para submissão ao serviço -->
+                    <!-- A listas escolas é inicializada no controller pela função carregamentoInicial -->
+                
+
+            <!-- Botão de envio -->
+                
+            <div>
+                </br>&emsp;&emsp; 
+                <button class="btn btn-primary" ng-click="adicionarAluno()">
+                    Realizar Reserva
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

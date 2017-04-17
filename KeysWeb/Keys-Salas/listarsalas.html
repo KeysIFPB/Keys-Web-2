@@ -1,0 +1,32 @@
+<div class="container" ng-controller="KeysController">
+
+    <div class="row">
+        <div class="page-header">
+            <h1>Listar Salas</h1>
+        </div>
+    </div>
+</br>
+
+    <!-- Exibir lista de Alunos -->
+    <div class="row">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Sala</th>
+                    <th>Situação</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="chave in chaves">
+                    <td>{{ chaves.id }}</td>
+                    <td>{{ chaves.sala }}</td>
+                    <td>{{ chaves.situação }}</td>
+                    
+                </tr>
+            </tbody> 
+        </table>
+    </div>
+
+</div>
