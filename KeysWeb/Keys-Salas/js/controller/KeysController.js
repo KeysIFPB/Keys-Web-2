@@ -93,3 +93,4 @@ KeysAppModulo.controller('KeysController', function (KeysService,$scope, $state,
                 $mdToast.show(toast);
             });
     };
+}

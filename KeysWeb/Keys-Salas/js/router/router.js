@@ -1,4 +1,4 @@
-angulaAppModulo.config(function ($routeProvider, $locationProvider) {    
+KeysAppModulo.config(function ($routeProvider, $locationProvider) {    
     
     // Remover a exclamação (!) da URL
     var SEM_PREFIXO = '';

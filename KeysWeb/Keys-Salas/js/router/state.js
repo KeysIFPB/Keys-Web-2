@@ -1,4 +1,4 @@
-angulaAppModulo.config(function ($stateProvider, $urlRouterProvider) {
+KeysAppModulo.config(function ($stateProvider, $urlRouterProvider) {
     
     // Rota padrão.
     $urlRouterProvider.otherwise("/");
